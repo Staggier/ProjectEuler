@@ -1,5 +1,6 @@
-using System;
+//The Problem can be found here: https://projecteuler.net/problem=12
 
+using System;
 namespace PE012
 {
     public class Program
