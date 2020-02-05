@@ -1,3 +1,5 @@
+// The Problem can be found here: https://projecteuler.net/problem=102
+
 using System;
 using System.IO;
 using System.Linq;
