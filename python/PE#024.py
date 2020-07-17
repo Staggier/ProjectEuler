@@ -1,9 +1,8 @@
 #The problem can be found here: https://projecteuler.net/problem=24
 
-def startingfn(n):
-    i = 0
-    t = 0
-    while(factorial(t) < n):
+def sf(n):
+    i, t = 0, 0
+    while f(t) < n:
         t += 1
     return t - 1
 
@@ -13,30 +12,28 @@ def f(n):
         product *= i
     return product
 
-def highestfn(n, k):
+def lf(n, k):
     total = 0
     c = 0
-    while (total < n):
-        total += factorial(k)
+    while total < n:
+        total += f(k)
         c += 1
     
-    return [total - factorial(k), c - 1]
+    return [total - f(k), c - 1]
 
 def lp(n):
-    i = startingf(n)
+    f = sf(n)
     ans = ""
 
     dlst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
     while f >= 0:
-        tlst = lf(n, i)
-        t = tlst[0]
-        d = tlst[1] - 1
+        tlst = lf(n, f)
+        t, d = tlst[0], tlst[1] - 1
         
+        n -= t
         ans += str(dlst[d])
         dlst.remove(dlst[d])
-
-        n -= t
-        i -= 1
+        f -= 1
         
     return ans
 
