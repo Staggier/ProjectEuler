@@ -1,9 +1,5 @@
 // The Problem can be found here: https://projecteuler.net/problem=96
 
-using System;
-using System.IO;
-using System.Collections.Generic;
-
 namespace PE096
 {
     class Program
